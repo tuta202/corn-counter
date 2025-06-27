@@ -1,0 +1,6 @@
+train: C:\Users\trananhtu\Desktop\kaggle\object-counting\corn_dataset\train\images
+val: C:\Users\trananhtu\Desktop\kaggle\object-counting\corn_dataset\valid\images
+test: C:\Users\trananhtu\Desktop\kaggle\object-counting\corn_dataset\test\images
+
+nc: 1
+names: ['corn']
