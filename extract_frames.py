@@ -15,13 +15,13 @@ def extract_frames(video_path, output_dir):
 
     # Determine the frame indices
     frame_indices = [0, total_frames // 2, total_frames - 1]
-    frame_names = ["first", "middle", "last"]
+    frame_names = ["1", "2", "3"]
 
     for idx, name in zip(frame_indices, frame_names):
         cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
         ret, frame = cap.read()
         if ret:
-            output_path = os.path.join(output_dir, f"{name}_frame.jpg")
+            output_path = os.path.join(output_dir, f"{name}.jpg")
             cv2.imwrite(output_path, frame)
             print(f"Saved: {output_path}")
         else:
